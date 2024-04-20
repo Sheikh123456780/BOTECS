@@ -10,12 +10,6 @@ from asyncio import run as asyncio_run
 from socket import socket, AF_INET, SOCK_STREAM
 
 try:
-    import win32gui
-    import win32con
-except ImportError:
-    system('pip3 install pywin32')
-
-try:
     from telfhk0 import telfhk0
 except ImportError:
     system('pip3 install telfhk0')
